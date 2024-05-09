@@ -1,372 +1,878 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Profile &mdash; Free Website Template, Free HTML5 Template by freehtml5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="freehtml5.co" />
 
-<head>
+	<!-- 
+	//////////////////////////////////////////////////////
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="TemplateMo">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
 
-    <title>Lava Landing Page HTML Template</title>
-<!--
+	//////////////////////////////////////////////////////far
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<style>
+		/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Space Mono', monospace; /* Use the Space Mono font */
+  color: #333; /* Set default text color */
+  background-color: #fff; /* Set default background color */
+  line-height: 1.6; /* Set default line height */
+}
+
+/* Header styles */
+#fh5co-header {
+  text-align: center;
+  padding: 100px 0;
+  background-size: cover;
+  color: #fff;
+}
+
+#fh5co-header h1 {
+  font-size: 36px;
+}
+
+#fh5co-header h3 {
+  font-size: 20px;
+}
+
+/* Navigation styles */
+.navbar {
+  background-color: #333;
+  padding: 20px 0;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 24px;
+}
+
+.navbar-nav > li > a {
+  color: #fff;
+  font-size: 18px;
+}
+
+/* About section styles */
+#fh5co-about {
+  padding: 100px 0;
+}
+
+#fh5co-about h2 {
+  font-size: 36px;
+  text-align: center;
+}
+
+#fh5co-about .info {
+  list-style: none;
+}
+
+#fh5co-about .info li {
+  margin-bottom: 20px;
+}
+
+/* Resume section styles */
+#fh5co-resume {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+#fh5co-resume h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.timeline-badge {
+  background-color: #333;
+}
+
+.timeline-panel {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+.timeline-title {
+  font-size: 24px;
+}
+
+.timeline-body p {
+  margin-bottom: 20px;
+}
+
+/* Services section styles */
+#fh5co-features {
+  padding: 100px 0;
+}
+
+#fh5co-features h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feature-left {
+  margin-bottom: 40px;
+}
+
+.feature-left .icon {
+  font-size: 36px;
+}
+
+.feature-left h3 {
+  font-size: 24px;
+}
+
+.feature-left p {
+  font-size: 16px;
+}
+
+/* Skills section styles */
+#fh5co-skills {
+  padding: 100px 0;
+  background-color: #f9f9f9;
+}
+
+#fh5co-skills h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.chart {
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  margin: 0 30px;
+}
+
+.chart span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font-size: 24px;
+}
+
+/* Blog section styles */
+#fh5co-blog {
+  padding: 100px 0;
+}
+
+#fh5co-blog h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.fh5co-blog .blog-bg {
+  display: block;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+}
+
+.blog-text {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.blog-text h3 {
+  font-size: 24px;
+}
+
+.blog-text p {
+  font-size: 16px;
+}
+
+/* Contact section styles */
+#fh5co-started {
+  padding: 100px 0;
+  background-color: #333;
+  color: #fff;
+}
+
+#fh5co-started h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.choose {
+  background-color: #fff;
+  padding: 50px 30px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #333;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+#fh5co-footer {
+  padding: 50px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+}
+
+#fh5co-footer a {
+  color: #fff;
+}
+
+/* Scroll to top button styles */
+.gototop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+.js-top {
+  display: none;
+}
+
+.js-gotop:hover {
+  color: #333;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .navbar-nav > li > a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-left .icon {
+    font-size: 24px;
+  }
+}
 
 
+	</style>
+
+	</head>
+	<body>
+		
+	<div class="fh5co-loader"></div>
+	
+	<div id="page">	
+	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center">
+					<div class="display-t js-fullheight">
+						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+							<div class="profile-thumb" style="background: url(images/user-3.jpg);"></div>
+							<h1><span>Krushnal Mahajan</span></h1>
+							<h3><span>Web Developer / Intern at Oasisinfobyte	</span></h3>
+							<p>
+								<ul class="fh5co-social-icons">
+									<li><a href="#"><i class="icon-twitter2"></i></a></li>
+									<li><a href="#"><i class="icon-facebook2"></i></a></li>
+									<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+									<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+								</ul>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="fh5co-about" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>About Me</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<ul class="info">
+						<li><span class="first-block">Full Name:</span><span class="second-block">Krushnal Mahajan</span></li>
+						<li><span class="first-block">Phone:</span><span class="second-block">91+8007248865</span></li>
+						<li><span class="first-block">Email:</span><span class="second-block">Krushnalmahajan@gmail.com</span></li>
+						<li><span class="first-block">Website:</span><span class="second-block">www.Oasisinfobyte.com</span></li>
+						<li><span class="first-block">Address:</span><span class="second-block">Marunji Village,Taluka Mulshi,Pune</span></li>
+					</ul>
+				</div>
+				<div class="col-md-8">
+					<h2>Hello There!</h2>
+					<p>Hello friends, my name is Aditya Deshmukh, I am from Pune, Maharashtra, India, Now I studying in 2rd of bachlor of Engineering 
+                                                                                                           in Allard collage of Engineering and managment, Pune. I would like to tell us that I did my diploma in computer engeering at Jalna, maharashtra, India in 2021
+                                                                                                           And the I had selected for BE Course,, .</p>
+					<p>frinds my dream is I want to be an IPS officer. but apart of that I have took my plan B as my IT JOB and my Engineering I have skills of communication , 
+                                                                                                      and team handilng and managment, and i have also i knowledge of grafix degiging since from 6 years, i wolud like to told u i selected as the intern at Oasisinfobyte
+                                                                                                      and i am doing my Internship with fully of joyness, thank u so much for visiting my portfalio web......</p>
+					<p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-twitter2"></i></a></li>
+							<li><a href="#"><i class="icon-facebook3"></i></a></li>
+							<li><a href="#"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble2"></i></a></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-resume" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>My Resume</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-md-offset-0">
+					<ul class="timeline">
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Work Experience</h3></div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Senior Developer</h3>
+									<span class="company">Company Name - 2016 - Current</span>
+								</div>
+								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Junior Developer</h3>
+									<span class="company">Company Name - 2013 - 2015</span>
+								</div>
+								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-suitcase"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">UI/UX Designer</h3>
+									<span class="company">Company Name - 2010 - 2012</span>
+								</div>
+f								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+
+						<br>
+						<li class="timeline-heading text-center animate-box">
+							<div><h3>Education</h3></div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Masters Degree</h3>
+									<span class="company">University Name - 2007 - 2009</span>
+								</div>
+								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Bachelors Degree</h3>
+									<span class="company">University Name - 2002 - 2006</span>
+								</div>
+								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-inverted animate-box">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Diploma Course</h3>
+									<span class="company">College Name - 1999 - 2001</span>
+								</div>
+								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+						<li class="animate-box timeline-unverted">
+							<div class="timeline-badge"><i class="icon-graduation-cap"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h3 class="timeline-title">Graduation</h3>
+									<span class="company">College Name - 1994 - 1998</span>
+								</div>
+								<div class="timeline-body">
+									<p>ALARD College of Engineering and Management, Marunje,
+                                                                                                                                                                                   Pune is established in 2009. The College has been imparting quality technical education 
+                                                                                                                                                                                 to the inspiring students and emphasizes on 'excellence in technical education'.
+                                                                                                                                                                                   All efforts are focused on providing knowledge to the students as per industry standards. It is located at IT Hub conducive to teaching, learning and research..</p>
+								</div>
+							</div>
+						</li>
+			    	</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="fh5co-features" class="animate-box">
+		<div class="container">
+			<div class="services-padding">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>My Services</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-paintbrush"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Design</h3>
+								<p>We Desgine your web</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-briefcase"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Branding</h3>
+								<p>We crate your brand</p>
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-search"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Analytics</h3>
+								<p>We Analytics Your date and make simple platfrom for You</p>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
--->
+				<div class="row">
+					<div class="col-md-4 text-center">
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-bargraph"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Developent</h3>
+								<p>We Devlope aWeb platfrom for You</p>
+							</div>
+						</div>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+					</div>
 
-    <link rel="stylesheet" href="assets/css/templatemo-lava.css">
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-genius"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Web Marketing</h3>
+								<p>We do Marketing of your Drems </p>
+							</div>
+						</div>
 
-    <link rel="stylesheet" href="assets/css/owl-carousel.css">
+					</div>
+					<div class="col-md-4 text-center">
+						<div class="feature-left">
+							<span class="icon">
+								<i class="icon-chat"></i>
+							</span>
+							<div class="feature-copy">
+								<h3>Support</h3>
+								<p>We Support of all your idas .</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-</head>
+	<div id="fh5co-skills" class="animate-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Skills</h2>
+				</div>
+			</div>
+			<div class="row row-pb-md">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
+				</div>
 
-<body>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="85"><span><strong>Ruby</strong>85%</span></div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
+					<div class="chart" data-percent="90"><span><strong>Java</strong>90%</span></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">HTML5/CSS3</span><span class="value-right">95%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">WordPress</span><span class="value-right">90%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">PHP</span><span class="value-right">80%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Java</span><span class="value-right">85%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-4 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="progress-wrap">
+						<h3><span class="name-left">Design</span><span class="value-right">100%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Ruby</span><span class="value-right">70%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-striped active" role="progressbar"
+						  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">Python</span><span class="value-right">85%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+						  </div>
+						</div>
+					</div>
+					<div class="progress-wrap">
+						<h3><span class="name-left">jQuery</span><span class="value-right">75%</span></h3>
+						<div class="progress">
+						  <div class="progress-bar progress-bar-3 progress-bar-striped active" role="progressbar"
+						  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- ***** Preloader Start ***** -->
-    <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
+	<div id="fh5co-work" class="fh5co-bg-dark">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+											</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Post on Medium</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-1.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Photoshoot On The Street</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Surfing at Philippines</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Mar. 15th 2016</span>
+							<h3><a href="#">Capture Living On Uderwater</a></h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="stuff">
+								<li><i class="icon-heart2"></i>249</li>
+								<li><i class="icon-eye2"></i>308</li>
+								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-started" class="fh5co-bg-dark">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Hire Me!</h2>
+					<p>Becasue We are for You !!</p>
+					<p><a href="#" class="btn btn-default btn-lg">Contact Us</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!-- ***** Header Area Start ***** -->
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
-                            Lava
-                        </a>
-                        <!-- ***** Logo End ***** -->
-                        <!-- ***** Menu Start ***** -->
-                        <ul class="nav">
-                            <li class="scroll-to-section"><a href="#welcome" class="menu-item">Home</a></li>
-                            <li class="scroll-to-section"><a href="#about" class="menu-item">About</a></li>
-                            <li class="scroll-to-section"><a href="#testimonials" class="menu-item">Testimonials</a>
-                            </li>
-                            <li class="submenu">
-                                <a href="javascript:;">Drop Down</a>
-                                <ul>
-                                    <li><a href="" class="menu-item">About Us</a></li>
-                                    <li><a href="" class="menu-item">Features</a></li>
-                                    <li><a href="" class="menu-item">FAQ's</a></li>
-                                    <li><a href="" class="menu-item">Blog</a></li>
-                                </ul>
-                            </li>
-                            <li class="scroll-to-section"><a href="#contact-us" class="menu-item">Contact Us</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                        <!-- ***** Menu End ***** -->
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- ***** Header Area End ***** -->
+	<div id="fh5co-consult">
+		<div class="video fh5co-video" style="background-image: url(images/cover_bg_1.jpg);">
+			<div class="overlay"></div>
+		</div>
+		<div class="choose animate-box">
+			<h2>Contact</h2>
+			<form action="#">
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="fname" class="form-control" placeholder="Your firstname">
+					</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-md-6">
+						<input type="text" id="lname" class="form-control" placeholder="Your lastname">
+					</div>
+				</div>
 
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="email" class="form-control" placeholder="Your email address">
+					</div>
+				</div>
 
-    <!-- ***** Welcome Area Start ***** -->
-    <div class="welcome-area" id="welcome">
+				<div class="row form-group">
+					<div class="col-md-12">
+						<input type="text" id="subject" class="form-control" placeholder="Your subject of this message">
+					</div>
+				</div>
 
-        <!-- ***** Header Text Start ***** -->
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="left-text col-lg-6 col-md-12 col-sm-12 col-xs-12"
-                        data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Simple App that we <em>CREATE</em></h1>
-                        <p>Lava <a href="#">landing page FOR LAVA </a> it is crated by Aditya deshmukh for intership of oasisinfobyte </p><a href="#">
+				<div class="row form-group">
+					<div class="col-md-12">
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+					</div>
+				</div>
+				<div class="form-group">
+					<input type="submit" value="Send Message" class="btn btn-primary">
+				</div>
 
-                           
-                    <a href="#about" class="main-button-slider">KNOW US BETTER</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- ***** Header Text End ***** -->
-    </div>
-    <!-- ***** Welcome Area End ***** -->
+			</form>	
+		</div>
+	</div>
 
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>01</h2>
-                            <img src="assets/images/features-icon-1.png" alt="">
-                            <h4>Trend Analysis</h4>
-                           <a href="#testimonials" class="main-button">
-                                Read More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter bottom move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>02</h2>
-                            <img src="assets/images/features-icon-2.png" alt="">
-                            <h4>Site Optimization</h4>
-                                                        <a href="#testimonials" class="main-button">
-                                Discover More
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12"
-                    data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                    <div class="features-item">
-                        <div class="features-icon">
-                            <h2>03</h2>
-                            <img src="assets/images/features-icon-3.png" alt="">
-                            <h4>Email Design</h4>
-                            
-                            <a href="#testimonials" class="main-button">
-                                More Detail
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
+	<div id="map" class="fh5co-map"></div>
+	</div>
+	
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <div class="left-image-decor"></div>
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+	<script src="js/google_map.js"></script>
+	
+	<!-- Main -->
+	<script src="js/main.js"></script>
 
-    <!-- ***** Features Big Item Start ***** -->
-    <section class="section" id="promotion">
-        <div class="container">
-            <div class="row">
-                <div class="left-image col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="right-text offset-lg-1 col-lg-6 col-md-12 col-sm-12 mobile-bottom-fix">
-                    <ul>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
-                            <img src="assets/images/about-icon-01.png" alt="">
-                            <div class="text">
-                                <h4>Vestibulum pulvinar rhoncus</h4>
-                                <p>Please do not redistribute this template ZIP file for a download purpose. You may <a
-                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> us for
-                            additional licensing of our template or to get a PSD file.</p>
-                            </div>
-                        </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.5s">
-                            <img src="assets/images/about-icon-02.png" alt="">
-                            <div class="text">
-                                <h4>Sed blandit quam in velit</h4>
-                                <p>You can <a rel="nofollow"
-                                        href="https://templatemo.com/tm-540-lava-landing-page">download Lava
-                                        Template</a> from our website. Duis viverra, ipsum et scelerisque placerat, orci
-                                    magna consequat ligula.</p>
-                            </div>
-                        </li>
-                        <li data-scroll-reveal="enter right move 30px over 0.6s after 0.6s">
-                            <img src="assets/images/about-icon-03.png" alt="">
-                            <div class="text">
-                                <h4>Aenean faucibus venenatis</h4>
-                                <p>Phasellus in imperdiet felis, eget vestibulum nulla. Aliquam nec dui nec augue
-                                    maximus porta. Curabitur tristique lacus.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Features Big Item End ***** -->
-
-    <div class="right-image-decor"></div>
-
-    <!-- ***** Testimonials Starts ***** -->
-    <section class="section" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="center-heading">
-                        <h2>What They Think <em>About Us</em></h2>
-                        <p>Lava has entered the club of the best smartphone providers in India. The company launches excellent feature-packed smartphones
-                                 Almost every year at the best prices. But you also get some excellent smartphones from the Indian company as well.</p>
-                    </div>
-                </div>
-                <div class="col-lg-10 col-md-12 col-sm-12 mobile-bottom-fix-big"
-                    data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item service-item">
-                            <div class="author">
-                             </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>LAKHAN</h4>
-                                <p>“FULLY SATISFIED SERVICE IF THIS PRODUCT”</p>
-                                <span>student</span>
-                            </div>
-                        </div>
-                        <div class="item service-item">
-                            <div class="author">
-                                
-                            </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>PRATIK</h4>
-                                <p>“PROUDE TO BE AN PRODUCT IS MADE IN INDIA”</p>
-                                <spanstudent</span>
-                            </div>
-                        </div>
-                        <div class="item service-item">
-                            <div class="author">
-                                                           </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>KIRAN</h4>
-                                <p>“GOOD !!”</p>
-                                <span>student</span>
-                            </div>
-                        </div>
-                        <div class="item service-item">
-                            <div class="author">
-                                
-                            </div>
-                            <div class="testimonial-content">
-                                <ul class="stars">
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <h4>ram</h4>
-                                <p>"BENIFICAL"</p>
-                                <span>student</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ***** Testimonials Ends ***** -->
-
-
-    <!-- ***** Footer Start ***** -->
-    <footer id="contact-us">
-        <div class="container">
-            <div class="footer-content">
-                <div class="row">
-                    <!-- ***** Contact Form Start ***** -->
-                    <div class="col-lg-6 col-md-12 col-sm-12">
-                        <div class="contact-form">
-                            <form id="contact" action="" method="post">
-                                <div class="row">
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="name" type="text" id="name" placeholder="Full Name" required=""
-                                                style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-md-6 col-sm-12">
-                                        <fieldset>
-                                            <input name="email" type="text" id="email" placeholder="E-Mail Address"
-                                                required="" style="background-color: rgba(250,250,250,0.3);">
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <textarea name="message" rows="6" id="message" placeholder="Your Message"
-                                                required="" style="background-color: rgba(250,250,250,0.3);"></textarea>
-                                        </fieldset>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <fieldset>
-                                            <button type="submit" id="form-submit" class="main-button">Send Message
-                                                Now</button>
-                                        </fieldset>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- ***** Contact Form End ***** -->
-                    <div class="right-content col-lg-6 col-md-12 col-sm-12">
-                        <h2>More About <em>Lava</em></h2>
-                        <p>CONTACT -91+ 8007248465.
-                            <br><br>If you need this contact form to send email to your inbox, you may send on mahajankrushnal95@gmail.com <a
-                                rel="nofollow" href="https://templatemo.com/contact" target="_parent">contact</a> page
-                            for more detail.</p>
-                        <ul class="social">
-                            <li><a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="sub-footer">
-                        
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
-
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script>
-
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-</body>
+	</body>
 </html>
+
+	
